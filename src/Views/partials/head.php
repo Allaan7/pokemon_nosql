@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <img class="pokemonBg" src="/public/css/style.css" alt="fond d'écran pokémon">
     <nav class="navbar navbar-expand-lg myNav">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">
