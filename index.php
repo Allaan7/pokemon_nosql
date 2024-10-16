@@ -10,5 +10,6 @@ $router = new Router();
  */
 $router->addRoute('/', 'HomeController', 'index');
 $router->addRoute('/createPokemon', 'PokemonController', 'addPokemon');
+$router->addRoute('/details', 'PokemonController', 'index');
 
 $router->handleRequest();

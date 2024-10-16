@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Utils;
+use App\Models\Pokemon;
 
 abstract class AbstractController
 {

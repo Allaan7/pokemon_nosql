@@ -38,4 +38,17 @@ class PokemonController extends AbstractController
         }
         require_once (__DIR__ . "/../Views/pokemon/createPokemon.view.php");
     }
+
+    public function index()
+    {
+        if(isset($_GET['id'])){
+            $id = $_GET['id'];
+            $pokemons = new Pokemon($id, null, null, null, null);
+            $pokemon = $pokemons->getById();
+            require_once(__DIR__ . '/../Views/pokemon/detailPokemon.view.php');
+        }else{
+            echo "Erreur: l'id du pokémon est incorrecte !";
+        }
+        
+    }
 }
